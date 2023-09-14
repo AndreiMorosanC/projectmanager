@@ -1,0 +1,64 @@
+
+body{
+    margin: 0;
+    
+}
+h3{
+    color: white;
+}
+#main-container{
+    width: 100%;
+    height: 100%;
+    background-color: #151618;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+    padding: 5px;
+}
+#user-container{
+    display: flex;
+    flex-direction: column;
+
+    height: auto;
+    background-color: #26282e;
+}
+#imgProfileName{
+    gap: 15px;
+}
+
+#tableAdd{
+    display: flex;
+    flex-direction: column;
+}
+#tableList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#boardButton{
+    margin-top: 15px;
+    justify-content: space-evenly;
+    gap: 5rem;
+    align-items: center;
+    
+    
+}
+
+#table-container{
+    
+    background-color: #26282e;
+}
+
+
+.row-Dis{
+    display: flex;
+    flex-direction: row;
+    
+}
+.img-user-circle{
+    margin: 5px;
+    width: 100px;
+    border-radius: 50%;
+}

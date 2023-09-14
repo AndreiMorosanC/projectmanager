@@ -1,0 +1,15 @@
+.newInput{
+    width: 70%;
+    background-color: #151618;
+    border: 1px solid #01c973;
+    color: white;
+}
+.newInput:focus{
+    border: 1px solid #01c973;
+    outline:none;
+}
+.newh2{
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Prompt', sans-serif;
+}
