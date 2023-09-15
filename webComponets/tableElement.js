@@ -1,11 +1,12 @@
 const template = document.createElement("template");
-
+let firstClick = true;
 template.innerHTML = `
 
   <style>
     #main{
       width:100%;
       height:auto;
+      
       display:flex;
       flex-direction:row;
       justify-content: center;
@@ -44,6 +45,19 @@ class TableElement extends HTMLElement {
     let clone = template.content.cloneNode(true);
     shadowRoot.append(clone);
     this.colorChange = document.getElementById("colorChange");
+    const main = shadowRoot.getElementById("main");
+    const addTableComponent = document.getElementById("addTableComponent")
+    main.addEventListener("click", () => {
+      
+      if(firstClick) {
+        const tableComponent = document.createElement("table-component");
+        const tableContainer = document.getElementById("table-container");
+        tableComponent.style.marginLeft = "20px";
+        tableContainer.insertBefore(tableComponent, addTableComponent);
+        addTableComponent.style.opacity= "100"
+        firstClick = false;
+      }
+    });
   }
 
   set dataValue(value) {
