@@ -5,7 +5,7 @@ const InputEnter = document.getElementsByClassName("newInput");
 btnAdd.addEventListener("click", () => {
   const newInput = document.createElement("input");
   newInput.classList.add("newInput");
-
+  tableList.style.opacity= "100"
   tableList.appendChild(newInput);
 
   newInput.addEventListener("keydown", function (e) {
@@ -19,5 +19,10 @@ btnAdd.addEventListener("click", () => {
     }
   });
 });
+
+
+  
+
+
 
 function addTableList() {}

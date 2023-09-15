@@ -4,11 +4,20 @@ template.innerHTML = `
 
   <style>
     #main{
+      width:100%;
+      height:auto;
       display:flex;
       flex-direction:row;
       justify-content: center;
       gap:25px;
       align-items:center;
+      transition: transform 0.3s ease;
+    }
+    #main:hover{
+    
+      cursor:pointer;
+      
+      transform: scale(1.1);
     }
     #colorChange{
       background-color:blue;
@@ -35,10 +44,6 @@ class TableElement extends HTMLElement {
     let clone = template.content.cloneNode(true);
     shadowRoot.append(clone);
     this.colorChange = document.getElementById("colorChange");
-    this.main = shadowRoot.getElementById("main");
-    this.main.addEventListener("click", () => {
-      
-    });
   }
 
   set dataValue(value) {
