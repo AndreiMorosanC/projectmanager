@@ -48,9 +48,8 @@ class TableElement extends HTMLElement {
     const main = shadowRoot.getElementById("main");
     const addTableComponent = document.getElementById("addTableComponent")
     main.addEventListener("click", () => {
-      
       if(firstClick) {
-        const tableComponent = document.createElement("table-component");
+        const tableComponent = document.createElement("column-table");
         const tableContainer = document.getElementById("table-container");
         tableComponent.style.marginLeft = "20px";
         tableContainer.insertBefore(tableComponent, addTableComponent);
