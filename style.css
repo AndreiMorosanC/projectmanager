@@ -1,6 +1,115 @@
 body {
   margin: 0;
+  background-color: #151618;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+#signUp-container{
+  width: 20rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#signUp-form-div{
+  background-color: #151618;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  margin: 5px 0;
+  width: 100%;
+  border: none;
+  border-bottom: solid rgb(143, 143, 143) 1px;
+
+  margin-bottom: 30px;
+
+  background: none;
+  color: rgba(255, 255, 255, 0.555);
+}
+
+/* Estilo para el botón de envío */
+button[type="submit"] {
+  width: 100%;
+  padding: 8px;
+  background-color: #26282e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos adicionales según sea necesario */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+#login-form {
+  background-color: #26282e;
+  width: 20rem;
+  height: 23rem;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#login-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+#login-container h2{
+  color: white;
+  
+}
+
+input[type="text"],
+input[type="password"] {
+  margin: 5px 0;
+  width: 100%;
+  border: none;
+  border-bottom: solid rgb(143, 143, 143) 1px;
+
+  margin-bottom: 30px;
+
+  background: none;
+  color: rgba(255, 255, 255, 0.555);
+}
+::placeholder {
+  text-align: center;
+}
+
+button[type="submit"] {
+  background-color: #01c973;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #009b5b;
+}
+#signUp{
+  color:#01c973;
+
+  margin-top: auto; /* Empuja el enlace hacia abajo */
+  margin-bottom: 10px;
+}
+
 h3 {
   color: white;
 }
@@ -8,11 +117,10 @@ h3 {
   width: 100%;
   min-height: 47vw;
   height: auto;
-  background-color: #151618;
+
   display: grid;
   grid-template-columns: 0.7fr 2fr;
   gap: 25px;
- 
 }
 #user-container {
   display: flex;
@@ -84,13 +192,12 @@ h3 {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  
 }
 
-#btnAdd:hover{
-    cursor:pointer;
-      
-    transform: scale(1.1);
+#btnAdd:hover {
+  cursor: pointer;
+
+  transform: scale(1.1);
 }
 
 .row-Dis {

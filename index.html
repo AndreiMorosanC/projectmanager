@@ -14,7 +14,33 @@
     <link rel="stylesheet" href="./style/tableList.css" />
   </head>
   <body>
-    <div id="main-container">
+    <div id="login-form">
+      <div id="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            placeholder="Your Username"
+          />
+          <br />
+
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Your Password"
+          />
+          <br />
+          <button type="submit">Login</button>
+        </form>
+        <a href="./Pages/SignUpPage.html" id="signUp">You don't have an account?</a>
+      </div>
+    </div>
+    <div id="main-container" style="display: none">
       <div id="user-container">
         <div class="row-Dis" id="imgProfileName">
           <img src="./img/basic-user.png" alt="" class="img-user-circle" />
@@ -63,8 +89,6 @@
             />
           </svg>
         </div>
-        
-          
       </div>
     </div>
   </body>
@@ -75,4 +99,5 @@
   <script src="./webComponets/columnTable.js"></script>
   <script src="./webComponets/cardTable.js"></script>
   <script type="module" src="./objects/tableListdata.js"></script>
+  <script src="./scripts/authenticationLogic.js"></script>
 </html>
