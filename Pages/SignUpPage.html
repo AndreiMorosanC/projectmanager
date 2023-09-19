@@ -9,7 +9,7 @@
 <body>
     <div id="signUp-form-div">
         <div id="signUp-container">
-          <h2>Login</h2>
+          <h2>SignUp</h2>
           <form id="SignUpForm">
             <input
               type="text"
@@ -21,7 +21,7 @@
             <br />
            <input
               type="text"
-              id="SurName"
+              id="Surname"
               name="Surname"
               required
               placeholder="Your Surname"
@@ -59,9 +59,13 @@
           placeholder="confirm your Password"
         />
         <br />
-            <button type="submit">signUp</button>
+        <button  id="btnSignUp">signUp</button>
           </form>
-          
+          <p id="error-message" style="color: red;"></p>
+
         </div>
 </body>
+
+<script src="../scripts/authenticationLogic.js"></script>
+
 </html>
