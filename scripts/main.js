@@ -15,11 +15,6 @@ for (const cookie of cookieArray) {
 }
 
 
-
-
-
-
-
 const btnLoggin = document.getElementById("btnLoggin");
 
 btnLoggin.addEventListener("click", () => {

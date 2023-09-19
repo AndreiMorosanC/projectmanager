@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    background-color: #151618;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  h2{
+    color: white;
+  }
+  #signUp-container{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+  
+  }
+  
+  #signUp-form-div{
+    width: 20rem;
+    background-color: #26282e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  
+  }
+  
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    margin: 5px 0;
+    width: 100%;
+    border: none;
+    border-bottom: solid rgb(143, 143, 143) 1px;
+  
+    margin-bottom: 30px;
+  
+    background: none;
+    color: rgba(255, 255, 255, 0.555);
+  }
+  
+  
+  #btnSignUp {
+    width: 50%;
+    padding: 8px;
+    background-color: #01c973;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  #btnLoggin{
+    width: 50%;
+    padding: 8px;
+    background-color: #01c973;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  
+  #login-form {
+    background-color: #26282e;
+    width: 20rem;
+    height: 23rem;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #login-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  #login-container h2{
+    color: white;
+    
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    margin: 5px 0;
+    width: 100%;
+    border: none;
+    border-bottom: solid rgb(143, 143, 143) 1px;
+  
+    margin-bottom: 30px;
+  
+    background: none;
+    color: rgba(255, 255, 255, 0.555);
+  }
+  ::placeholder {
+    text-align: center;
+  }
+  
+  button[type="submit"] {
+    background-color: #01c973;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #009b5b;
+  }
+  #signUp{
+    color:#01c973;
+  
+    margin-top: auto; 
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    color: white;
+  }
+  #main-container {
+    width: 100%;
+    min-height: 47vw;
+    height: auto;
+  
+    display: grid;
+    grid-template-columns: 0.7fr 2fr;
+    gap: 25px;
+  }
+  #user-container {
+    display: flex;
+    flex-direction: column;
+  
+    height: auto;
+    background-color: #26282e;
+  }
+  #imgProfileName {
+    gap: 15px;
+  }
+  
+  #tableAdd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #tableList {
+    width: 70%;
+    min-height: 150px;
+    height: auto;
+    background-color: #151618;
+    margin-top: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+  }
+  .newInput {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    align-self: center;
+  }
+  
+  #boardButton {
+    margin-top: 15px;
+    justify-content: space-evenly;
+    gap: 5rem;
+    align-items: center;
+  }
+  
+  #table-container {
+    background-color: #26282e;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    overflow: auto;
+  }
+  #addTableComponent {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 180px;
+    height: 300px;
+    background-color: #151618;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+  
+  #btnAdd:hover {
+    cursor: pointer;
+  
+    transform: scale(1.1);
+  }
+  
+  .row-Dis {
+    display: flex;
+    flex-direction: row;
+  }
+  .img-user-circle {
+    margin: 5px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  
