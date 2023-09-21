@@ -69,34 +69,35 @@ for (const cookie of cookieArray) {
   }
 }
 
+
 const btnLoggin = document.getElementById("btnLoggin");
 
-btnLoggin.addEventListener("click", () => {
-  const password = document.getElementById("password").value;
-  const username = document.getElementById("username").value;
+// btnLoggin.addEventListener("click", () => {
+//   const password = document.getElementById("password").value;
+//   const username = document.getElementById("username").value;
 
-  if (
-    userData &&
-    password === userData.password &&
-    username === userData.username
-  ) {
-    console.log("¡Inicio de sesión exitoso!");
-    password.value = "";
-    username.value = "";
+//   if (
+//     userData &&
+//     password === userData.password &&
+//     username === userData.username
+//   ) {
+//     console.log("¡Inicio de sesión exitoso!");
+//     password.value = "";
+//     username.value = "";
 
-    loginContainer.style.display = "none";
-    mainContainer.style.display = "grid";
-  } else {
-    console.log("Nombre de usuario o contraseña incorrectos.");
-  }
-});
+//     loginContainer.style.display = "none";
+//     mainContainer.style.display = "grid";
+//   } else {
+//     console.log("Nombre de usuario o contraseña incorrectos.");
+//   }
+// });
 
-mainContainer.addEventListener("load", () => {
-  const addTableComponent = document.getElementById("addTableComponent");
-  const tablecontainer = document.getElementById("table-container");
+// mainContainer.addEventListener("load", () => {
+//   const addTableComponent = document.getElementById("addTableComponent");
+//   const tablecontainer = document.getElementById("table-container");
 
-  addTableComponent.addEventListener("click", () => {
-    const tableComponent = document.createElement("column-table");
-    tablecontainer.insertBefore(tableComponent, addTableComponent);
-  });
-});
+//   addTableComponent.addEventListener("click", () => {
+//     const tableComponent = document.createElement("column-table");
+//     tablecontainer.insertBefore(tableComponent, addTableComponent);
+//   });
+// });

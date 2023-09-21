@@ -29,7 +29,7 @@ body {
   margin: 0;
   background-color: #151618;
 }
-#home-mainContaienr {
+#home-mainContaiener {
   width: 100%;
   height: auto;
   margin-bottom: 40%;
@@ -37,6 +37,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 15rem ;
 }
 
 
@@ -170,4 +171,93 @@ a {
   width: 70px;
   height: 30px;
   margin-right: 4px;
+}
+
+
+.card-pay{
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 15px;
+  color: white;
+  background-color: #222;
+}
+.card-pay span{
+  font-size: 3rem;
+}
+.little-font{
+  font-size: 0.7rem;
+}
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+
+
+@media only screen and (max-width: 425px) {
+  #mainContent{
+    display: flex;
+    flex-direction: column;
+    
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+    background-color: #222; 
+    border-radius: 0; 
+    transform: skew(0);
+  }
+  .card-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #ReviewClients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-Clients{
+    align-self: center;
+    width: 70%;
+  }
+  
+
+
+
+}
+@media (min-width: 427px) and (max-width: 790px){
+  #home-mainContaiener{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #mainContent{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+  
+    
+    height: auto;
+    width: 90%;
+    
+    background-color: #222; 
+    border-radius: 0; 
+    transform: skew(0);
+  }
+  .card-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #ReviewClients{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    width: 90%;
+  }
 }
