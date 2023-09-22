@@ -14,8 +14,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #151618; /* Color de fondo del encabezado */
-  color: #fff; /* Color del texto del encabezado */
+  background-color: #151618; 
+  color: #fff; 
   padding: 10px 0;
   text-align: center;
   z-index: 1000; 
@@ -61,6 +61,7 @@ body {
 a {
   text-decoration: none;
   color: white;
+  
 }
 
 .logo {
@@ -89,12 +90,13 @@ a {
   width: 300px;
   color: white;
   background-color: #01c973;
-  text-align: center;
+
   align-self: center;
   border: 0;
   margin-top: auto; 
   margin-bottom: 50px;
-  
+  align-items: center;
+  text-align: center;
 }
 .btn-green:hover{
   cursor: pointer;

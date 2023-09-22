@@ -1,19 +1,3 @@
-// class TableComponent{
-//     constructor(data,tittle){
-//         this.tittle = tittle;
-//         this.data = data;
-//         this.tittleEnter = false;
-
-//     }
-
-//     WaitingTittle(tittle, data){
-//         if(this.tittleEnter === false){
-//             const container = document.createElement("div");
-//         }
-
-//     }
-
-// }
 
 class TableComponent extends HTMLElement {
   constructor() {

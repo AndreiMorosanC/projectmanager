@@ -1,5 +1,3 @@
-
-
 const btnAdd = document.getElementById("btnAdd");
 const tableList = document.getElementById("tableList");
 const InputEnter = document.getElementsByClassName("newInput");
@@ -39,5 +37,3 @@ btnAdd.addEventListener("click", () => {
   
 export {tableListData};
 
-
-function addTableList() {}

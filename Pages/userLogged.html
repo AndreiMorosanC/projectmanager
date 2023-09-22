@@ -11,43 +11,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../style/userLogged.css" />
-    <link rel="stylesheet" href="./style/tableList.css" />
+    
   </head>
   <body>
-    <div id="login-form">
-      <div id="login-container">
-        <h2>Login</h2>
-        <form id="loginForm">
-          <input
-            type="text"
-            id="username"
-            name="username"
-            required
-            placeholder="Your Username"
-          />
-          <br />
-
-          <input
-            type="password"
-            id="password"
-            name="password"
-            required
-            placeholder="Your Password"
-          />
-          <br />
-          
-        </form>
-        <button id="btnLoggin">Login</button>
-        <a href="./SignUpPage.html" id="signUp">You don't have an account?</a>
-      </div>
-    </div>
-    <div id="main-container" style="display: none">
+    <div id="main-container">
       <div id="user-container">
         <div class="row-Dis" id="imgProfileName">
           <img src="../img/basic-user.png" alt="" class="img-user-circle" />
           <div>
             <h3>work space</h3>
-            <h3>Andrei Morosan</h3>
+            <h3 id="userData-name"></h3>
           </div>
         </div>
         <div id="tableAdd">
@@ -93,12 +66,12 @@
       </div>
     </div>
   </body>
-  <script src="../scripts/main.js"></script>
+  <script src="../scripts/projectmanager.js"></script>
   <script src="../scripts/tableList.js" type="module"></script>
   <script src="../webComponets/tableElement.js"></script>
   <script src="../webComponets/tableComponent.js"></script>
   <script src="../webComponets/columnTable.js"></script>
   <script src="../webComponets/cardTable.js"></script>
-  <script type="module" src="../objects/tableListdata.js"></script>
+  
   
 </html>
