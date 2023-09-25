@@ -1,31 +1,56 @@
-const mainContainer = document.getElementById("main-container");
-const loginContainer = document.getElementById("login-form");
-const userDataName = document.getElementById("userData-name");
+const tableAddContainer = document.getElementById("tableAddContainer")
+const projectListContainer = document.getElementById("projectListContainer");
+const btnAddProject = document.getElementById("btnAddProject");
+const boardContainer = document.getElementById("board-container")
+const titleboard = document.getElementById("titleboard")
+const userDataProject = {
+  tittle: "",
+  InputDataProject: [],
 
-
-const cookies = document.cookie;
-const cookieArray = cookies.split(";");
-let userData = "";
-
-for (const cookie of cookieArray) {
-  const trimmedCookie = cookie.trim();
-  if (trimmedCookie.startsWith("userData=")) {
-    const userDataString = trimmedCookie.split("=")[1];
-    userData = JSON.parse(decodeURIComponent(userDataString));
-    break;
-  }
 }
 
-mainContainer.addEventListener("load", () => {
-  const addTableComponent = document.getElementById("addTableComponent");
-  const tablecontainer = document.getElementById("table-container");
+btnAddProject.addEventListener("click", ()=>{
+  const inputTittleProject = document.createElement("input");
+  inputTittleProject.placeholder  = "Name the Project"
+  inputTittleProject.classList.add("inputTittleProject")
+  projectListContainer.appendChild(inputTittleProject)
 
-  addTableComponent.addEventListener("click", () => {
-    const tableComponent = document.createElement("column-table");
-    tablecontainer.insertBefore(tableComponent, addTableComponent);
-  });
+  inputTittleProject.addEventListener("keydown", (e)=>{
+    if(e.key === "Enter" ){
+      if( inputTittleProject.value !== ""){
+        userDataProject.tittle = inputTittleProject.value;
+        const card = document.createElement("p")
+        card.classList.add("cardProject")
+        card.innerText = userDataProject.tittle
+        projectListContainer.appendChild(card)
+        inputTittleProject.value = "";
+        inputTittleProject.remove()
+      }
+     
+
+    }
+  })
+})
+
+projectListContainer.addEventListener("click", (e) => {
+  if (e.target.classList.contains("cardProject")) {
+    titleboard.innerText = userDataProject.tittle
+  }
 });
 
 
+titleboard.addEventListener("click", ()=>{
+  const inputh2 = document.createElement("input")
+  inputh2.value = userDataProject.tittle
 
-userDataName.innerText = `${userData.name} ${userData.surname}`
+  titleboard.replaceWith(inputh2)
+  inputh2.focus()
+
+
+  inputh2.addEventListener("blur", ()=>{
+    userDataProject.tittle = inputh2.value;
+    const newBoardTittle = document.createElement("h2");
+    newBoardTittle.innerText = userDataProject.tittle;
+    inputh2.replaceWith(newBoardTittle);
+  })
+})

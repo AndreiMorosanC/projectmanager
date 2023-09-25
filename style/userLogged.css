@@ -1,6 +1,10 @@
+*{
+  font-family: 'Prompt', sans-serif;
+  font-family: 'Skranji', cursive;
+}
 body {
     margin: 0;
-    background-color: #151618;
+    background-color: rgb(78, 75, 90);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,27 +153,37 @@ body {
     gap: 15px;
   }
   
-  #tableAdd {
+  #tableAddContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  #tableList {
+  #projectListContainer {
+    padding: 1rem 1rem ;
     width: 70%;
     min-height: 150px;
-    height: auto;
+    max-height: 400px;
     background-color: #151618;
-    margin-top: 20px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
   
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 0;
+    overflow: auto;
+    scrollbar-width: thin; 
+  }
+  #projectListContainer::-webkit-scrollbar{
+    height: 1000px;
+    width: 3px;
+   
+  }
+  #projectListContainer::-webkit-scrollbar-thumb{
+    background-color: #01c973; 
+    
+    
   }
   .newInput {
     margin-top: 15px;
@@ -184,20 +198,36 @@ body {
     align-items: center;
   }
   
-  #table-container {
+  #board-container{
     background-color: #222;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: start;
-    align-items: center;
-    gap: 30px;
+    
+    
     overflow: auto;
   }
-  #addTableComponent {
+  #titleboardContainer{
+    width: 100%;
+    height: 7%;
+    background-color:#26282e ;
+  }
+  #titleboard{
+    color: white;
+    padding-left: 10px;
+  }
+  #board{
+    
+    width: 95%;
+    height: 80%;
+    border: #151618 solid 3px;
+    
+  }
+  #addBoardComponent {
     margin-top: 15px;
     margin-left: 15px;
-    width: 180px;
-    height: 300px;
+    width: 300px;
+    height: 180px;
     background-color: #151618;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -207,10 +237,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0;
+   
   }
   
-  #btnAdd:hover {
+  #btnAddProject:hover {
     cursor: pointer;
   
     transform: scale(1.1);
@@ -226,3 +256,27 @@ body {
     border-radius: 50%;
   }
   
+
+
+
+  /* JS CLASS */
+
+  .inputTittleProject{
+
+    width: 80%;
+    height: 15px;
+  }
+
+  .cardProject{
+    background-color: #01c973;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    color: white;
+
+
+  }
+  .cardProject:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }

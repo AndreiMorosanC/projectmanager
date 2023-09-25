@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  -displayPhrases(0);
+  displayPhrases(0);
 });
 
 window.addEventListener("scroll", function () {
